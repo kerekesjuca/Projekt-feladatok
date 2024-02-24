@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+}
+
+#clock {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  font-family: 'Ranchers', cursive;
+  font-size:80px;
+  margin-top:-40%;
+}

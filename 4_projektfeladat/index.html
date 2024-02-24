@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Raktár</title>
+</head>
+
+<body>
+	<button onclick="order(5)">Order 5</button>
+	<button onclick="order(10)">Order 10</button>
+
+	<script>
+
+		var stockedQuantity = 6;
+
+		function order(orderedQuantity) {
+
+			if (orderedQuantity > stockedQuantity) {
+				alert('Nem áll rendelkezésre elegendő áru a raktárban. Jelenlegi készlet: ' + stockedQuantity) + 'db';
+			}
+			else {
+				console.log('Megrendelés folytatása');
+			}
+
+		}
+	</script>
+</body>
+
+</html>
