@@ -8,9 +8,7 @@
 </head>
 
 <body>
-	<button onclick="order(5)">Order 5</button>
-	<button onclick="order(10)">Order 10</button>
-
+	
 	<script>
 
 		var stockedQuantity = 6;
@@ -26,6 +24,17 @@
 
 		}
 	</script>
+
+<p>
+	Jelenlegi raktárkészlet a console log-ban látható.
+</p>
+	<script>
+		console.log(stockedQuantity + ' darab van készleten.');
+	</script>
+
+	<button onclick="order(5)">5 db rendelése</button>
+	<button onclick="order(10)">10 db rendelése</button>
+
 </body>
 
 </html>
