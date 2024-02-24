@@ -1,0 +1,23 @@
+html,
+body {
+	height: 100%;
+}
+
+.clock {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	font-family: 'Ranchers', cursive;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+
+}
+
+.clock.footer {
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	top: auto;
+	right: auto;
+}
