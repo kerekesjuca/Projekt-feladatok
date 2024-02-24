@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("img").hide();
+  $("button").click(function(){
+    $("p").hide();
+    $("img").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<h1>Megérkezett a méteres havazás az alpokba</h1>
+
+<p>Helyenként már több mint egy méter hó hullott és a csapadéknak még nincs vége.</p>
+<p>Mediterrán ciklon pumpál dél felől enyhe és rendkívül nedves levegőt az Alpok térségébe. Az 1500-2000 méter fölötti régiókban (nyugat felé csökken a hóhatár) pénteken hatalmas havazás kezdődött, szombat reggelre elsősorban a hegyek szél felőli déli oldalán </p>
+<img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/129498922_3190013897770151_6877770014755274271_o.jpg?_nc_cat=109&ccb=2&_nc_sid=8bfeb9&_nc_ohc=RlqOVeW5XxAAX8BFOb8&_nc_ht=scontent-vie1-1.xx&oh=a338f32df2b72509118b076e802569de&oe=5FF3A989">
+<button>Képek</button>
+
+</body>
+</html>
