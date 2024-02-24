@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<style>
+    * {
+        margin: 2px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #kep {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <p id="szoveg" >A fotózás története egészen a 9. századig nyúlik vissza, ahol iszlám tudósok felfedezték a camera obscurát, amit leginkább csillagászati célokra használtak. Rengeteg kísérletezés után 1816-ban Joseph Nicéphore Niepcenek sikerült camera obscura segítségével üveglapra kent fényérzékeny aszfaltra képet készítenie, amelyet azután lenolajjal lemosva tett láthatóvá. Egyik első fennmaradt képén, 1826-ból néhány háztető látható, amelyet 8 órás expozícióval sikerült rögzítenie. A camera obscura eljárás ma újra népszerű, az eszköz egyszerűen, akár egy dobozból is elkészíthető. Ezt követően Henry Talbot-nak, 1835-ben már csak 10 percre volt szüksége, hogy öklömnyi méretű kamerájával megörökítse a nappali ablakát.
+
+        
+    </p><br />
+    <p id="kepLeiras">Forrás: <a href="https://thebrightacademy.hu/fotozas-alapjai-hasznos-tippek-es-trukkok/"> https://thebrightacademy.hu/fotozas-alapjai-hasznos-tippek-es-trukkok/ </a></p>
+
+    <button id="toggleButton" style="margin-bottom: 5px;">Fotózás története</button>
+
+    <img id="kep" style="display: none;"
+        src="./fotozas-tortenete.png">
+
+    <script>
+        function showHide() {
+            $("#toggleButton").click(showHideElements);
+        };
+
+        function showHideElements() {
+            $("#kep").toggle();
+            $("#szoveg, #kepLeiras").toggle();
+        };
+
+        $(document).ready(showHide);
+    </script>
+</body>
+
+</html>
