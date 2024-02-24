@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+<style>
+    * {
+        margin: 2px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #kep {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <h1 style="margin-bottom: 20px;">Megérkezett a méteres havazás az alpokba</h1>
+    <p id="szoveg" style="display: none;">Helyenként már több mint egy méter hó hullott és a csapadéknak még nincs vége.
+    </p><br />
+    <p id="kepLeiras" style="display: none;">Mediterrán ciklon pumpál dél felől enyhe és rendkívül nedves levegőt az
+        Alpok térségébe. Az
+        1500-2000 méter fölötti régiókban (nyugat felé csökken a hóhatár) pénteken hatalmas havazás kezdődött,
+        szombat reggelre elsősorban a hegyek szél felőli déli oldalán </p>
+
+    <button id="toggleButton" style="margin-bottom: 5px;">Képek</button>
+
+    <img id="kep"
+        src="https://www.turistamagazin.hu/media/thumbs/te/li/ha/teli-hangulat-az-osztrak-hegyeket-mar-hotakaro-boritj-60e8a238-6865423.jpg">
+
+    <script>
+        function showHide() {
+            $("#toggleButton").click(showHideElements);
+        };
+
+        function showHideElements() {
+            $("#kep").toggle();
+            $("#szoveg, #kepLeiras").toggle();
+        };
+
+        $(document).ready(showHide);
+    </script>
+</body>
+
+</html>
